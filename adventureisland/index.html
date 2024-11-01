@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adventure Island</title>
+        <link rel="stylesheet" href="styles.css">
+        <script> window.RufflePlayer = window.RufflePlayer || {}; window.RufflePlayer.config = { "warnOnUnsupportedContent": false, "autoplay": "on", "unmuteOverlay": "hidden" }; </script>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2024.10.31/ruffle.js"></script>
+        <script src="./swfobject.js"></script>
+        <meta description="Welcome to Adventure Island, a game where you can make new friends!">
+        <body>
+            <h1>Adventure <alt>Island</alt></h1>
+            <script type="text/javascript">
+                var swfUrl                  = "./site.swf";
+                var swfID                   = "scene";
+                var swfWidth                = "100%";
+                var swfHeight               = "1000";
+                var swfVersion              = "9.0.28.0";
+                var allowExpressInstall     = false;
+            
+                var flashVars = {};
+            
+                var params = {
+                    menu                    : "false",
+                    allowscriptaccess       : "always",
+                    wmode					: "opaque",
+                    bgcolor					: "#0186B1",
+                    salign					: "t"
+                };
+            
+                var attributes = {
+                    id                      :swfID,
+                    name                    :swfID
+                };
+            
+                swfobject.embedSWF(swfUrl, swfID, swfWidth, swfHeight, swfVersion, allowExpressInstall, flashVars, params, attributes);
+            </script>
+            <ruffle-object type="application/x-shockwave-flash" id="scene" name="scene" data="./site.swf" width="640" height="480" style="visibility: visible;"></ruffle-object>
+           <!--𐌲𐍉𐍄𐌷𐌹𐌺 𐌹𐌶 𐌺𐍉𐍉𐌻!-->
+        </body>
+    </head>
+</html>
